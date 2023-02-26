@@ -1,0 +1,196 @@
+/*
+Colores a usar para poder hacer uso de colores degradados usar las siguientes lineas:
+
+Linea para hacer un color transparente
+background-color: rgba(0, 0, 0, 0.29);
+
+Color de fondo principal
+background-image: linear-gradient(lightblue, darkblue);
+
+color de fondo de main
+background: linear-gradient(360deg, #ddf6b8 30%,#1d7d8e 70%);
+
+*/
+
+html {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	height: 100%;
+	background-image: linear-gradient(lightblue, darkblue);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	display: flex;
+	margin: 0; 
+}
+
+/*Configuracion de tamaño del formulario de registro*/
+main {
+	background: linear-gradient(360deg, #ddf6b8 30%,#1d7d8e 70%);
+	width: 1320px;
+	height: 550px;
+	margin: auto;
+	margin-top: 5%;
+	border-radius: 2%;
+	overflow: hidden;
+}
+
+section {
+	display: flex;
+	height: 100%;
+}
+
+
+h1 {
+	display: block;
+	text-align: center;
+	color: white;
+	font-size: 180%;
+}
+
+h1:first-letter {
+	color: #8b0000;
+}
+
+h2 {
+	display: block;
+	text-align: center;
+	color: white;
+	font-size: 180%;
+}
+
+h2:first-letter {
+	color: #ff4200;
+}
+
+/*Configuracion del div de la parte izquierda del formulario*/
+section > div:nth-child(1) {
+	width: 30%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/*Configuracion del div de la parte derecha del formulario*/
+section > div:nth-child(2) {
+	width: 70%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.29);
+	border-top-left-radius: 25%;
+	border-bottom-left-radius: 25%;
+	display: flex;
+	flex-direction: column;
+}
+
+/*Centrado y redimensionado de la imagen*/
+section > div > img {
+	width: 100%;
+	margin: auto;
+}
+
+/*Configuracion de la etiqueda "a" de la parte izquierda del div como un boton "acceder"*/
+section > div > a {
+	width: 120px;
+	height: 50px;
+	background-color: #28a745;
+	margin: auto;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	text-decoration: none;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 30px;
+	font-size: 120%;
+}
+
+section > div > a:hover {
+	background-color: #497e55;
+}
+
+
+/*Configuracion del formulario*/
+form {
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+form > div {
+	display: flex;
+	flex: 1 0 0;
+}
+
+/*La cuarta fila del formulario ocupara el doble de tamaño vertical*/
+form > div:nth-child(4) {
+	flex: 2 0 0;
+}
+
+/*Configuracion para todos los div que contienen inputs*/
+form > div > div {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+/*Configuracion para la ultima columna del formulario, donde se encuentra el boton (etiqueta "a")*/
+form > div:nth-child(5) > div {
+	width: 100%;
+}
+
+form label {
+	color: white;
+	font-size: 125%;
+}
+
+form input {
+	height: 50%;
+	border-radius: 25px;
+	text-align: center;
+	font-size: 100%;
+}
+
+/*Los input debe medir la mitad porque la cuarta fila del formulario tiene el doble de tamaño*/
+form > div:nth-child(4) input {
+	height: 25%;
+}
+
+form select {
+	height: 50%;
+	border-radius: 25px;
+	font-size: 100%;
+}
+
+form textarea {
+	height: 55%;
+	border-radius: 12px;
+	text-align: center;
+	font-size: 130%;
+}
+
+/*Configuracion de la etiqueta "a" de la parte derecha del div como boton "guardar"*/
+form a {
+	width: 120px;
+	height: 50px;
+	background-color: #007bff;
+	margin: auto;
+	margin-top: -20px;
+	text-decoration: none;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 30px;
+	font-size: 120%;
+
+}
+
+form a:hover {
+	background-color: #476a91;
+}
